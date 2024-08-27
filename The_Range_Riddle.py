@@ -9,6 +9,6 @@ import random
 moods = ['Happy', 'Sad', 'Energetic', 'Calm']
 days_of_the_week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
-for day in days_of_the_week:
+for day in range(len(days_of_the_week)):
     mood = random.choice(moods)
-    print("It's " + day + " and I'm feeling " + str(mood) + "!")
+    print("It's " + days_of_the_week[day] + " and I'm feeling " + str(mood) + "!")
